@@ -11,7 +11,7 @@ function chat() {
           <h1 className={`text-lg font-semibold mb-4`}>Chats</h1>
           <ul className={`space-y-2`}>
             <li className={`flex shadow-2xl shadow-violet-500 items-center border border-violet-500 border-2 rounded-md p-2 pb-2`}>
-              <img className={`w-10 h-10 rounded-full mr-4`} src="contact1.png" alt="Contact" />
+              {/* <img className={`w-10 h-10 rounded-full mr-4`} src="contact1.png" alt="Contact" /> */}
               <p className={`text-white`}>Your Master</p>
             </li>
             {/* Add more contacts */}
@@ -27,7 +27,7 @@ function chat() {
           <div className={`p-4`}>
             {/* Chat messages */}
             <div className={`flex items-start mb-4`}>
-              <img className={`w-10 h-10 rounded-full mr-4`} src="user1.png" alt="User" />
+              {/* <img className={`w-10 h-10 rounded-full mr-4`} src="user1.png" alt="User" /> */}
               <div className={`bg-black border-2 border-violet-500 rounded-lg p-2`}>
                 <p className={`text-white mb-1`}>Lord Vader....</p>
                 <span className={`text-gray-500 text-sm`}>10:30 AM</span>
@@ -38,7 +38,7 @@ function chat() {
                 <p className={`text-white mb-1`}>What is thy bidding my master?</p>
                 <span className={`text-gray500 text-sm`}>10:32 AM</span>
               </div>
-              <img className={`w-10 h-10 rounded-full ml-4`} src="user2.png" alt="User" />
+              {/* <img className={`w-10 h-10 rounded-full ml-4`} src="user2.png" alt="User" /> */}
             </div>
             {/* End of chat messages */}
           </div>
