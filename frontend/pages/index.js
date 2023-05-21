@@ -1,9 +1,21 @@
-import Header from "@/components/Header";
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-export default function App() {
-  return(
-    <div>
-      <Header />
-      </div>
-  )
-}
+const App = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    localStorage.setItem('userId', 'gd2BZkgPrHZ1KdCv04bq');
+    const userId = localStorage.getItem('userId');
+
+    if (!userId) {
+      router.push('/login');
+    } else {
+      router.push('/home');
+    }
+  }, []);
+
+  return <div>Redirecting...</div>;
+};
+
+export default App;

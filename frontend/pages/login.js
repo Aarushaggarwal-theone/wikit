@@ -1,7 +1,31 @@
 import Header from '@/components/Header'
 import React from 'react'
+import { useState } from 'react';
+import axios from 'axios';
 
 function login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = async (e) => {
+    try {
+      const response = await fetch('https://w-backend.onrender.com/api/users/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email,
+          password
+        })
+      });
+
+      console.log(response.json())
+    } catch (error) {
+      // Handle error
+      console.error(error);
+    }
+  };
   return (
     <div className={`flex items-center justify-center h-screen bg-black`}>
       <Header />
@@ -18,6 +42,7 @@ function login() {
               type="email"
               placeholder="Enter your email"
               required
+               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className={`mb-6`}>
@@ -29,11 +54,12 @@ function login() {
               id="password"
               type="password"
               placeholder="Enter your password"
+              onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>
           <div className={`flex items-center justify-between`}>
-          <button className={`bg-black border border-1 border-violet-500 shadow-violet-500/50 shadow-xl text-white font-bold py-2 px-4 rounded-md mt-4`}>
+          <button onClick={(e) => handleSubmit(e) } className={`bg-black border border-1 border-violet-500 shadow-violet-500/50 shadow-xl text-white font-bold py-2 px-4 rounded-md mt-4`}>
               Login
             </button>
             <a

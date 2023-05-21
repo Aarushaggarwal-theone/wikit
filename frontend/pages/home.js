@@ -1,47 +1,49 @@
 import React from 'react'
-
+import Header from '@/components/Header'
 function home() {
+  const games = [
+    {
+      gameType: 'Playoff 1',
+      teamNames: 'GT vs CSK ',
+      date: 'Today',
+      time: "7:30pm"
+    },
+    {
+      gameType: 'Playoff 2',
+      teamNames: 'LSG vs MI ',
+      date: 'Wed, 24 May',
+      time: "7:30pm"
+    }
+    
+  ]
   return (
 <div className={`h-screen mx-auto p-4`}>
-      {/* Upcoming Matches */}
+    <div className={`mb-8`}>
+      <Header />
+      </div>
       <div className={`mb-8`}>
-        <h2 className={`text-2xl font-semibold mb-4`}>Upcoming Matches Today</h2>
+        <h2 className={`text-2xl font-semibold mb-4`}>Next Matches</h2>
+        matches.ma
         <div className={`grid grid-cols-2 gap-4`}>
-          <div className={`bg-white rounded-lg p-4`}>
-            <h3 className={`text-xl font-semibold mb-2`}>Match 1</h3>
-            <p className={`text-gray-800 mb-4`}>MI vs SRH</p>
-            <p className={`text-gray-500`}>Date: Today</p>
-            <p className={`text-gray-500`}>Time: 3:30pm</p>
-          </div>
-          <div className={`bg-white rounded-lg p-4`}>
-            <h3 className={`text-xl font-semibold mb-2`}>Match 2</h3>
-            <p className={`text-gray-800 mb-4`}>RCB vs GT</p>
-            <p className={`text-gray-500`}>Date: Today</p>
-            <p className={`text-gray-500`}>Time: 7:30pm</p>
-          </div>
+           {games.map((game, index) => (
+        <div key={index} className={`bg-purple-500 rounded-lg p-8 hover:bg-purple-300 hover:transition-ease hover:shadow-purple-500`}>
+          <h3 className={`text-xl font-semibold mb-2 text-black`}>{game.gameType}</h3>
+          <p className={`text-gray-800 mb-4`}>{game.teamNames}</p>
+          <p className={`text-gray-50`}>Date: {game.date}</p>
+          <p className={`text-gray-50`}>Time: {game.time}</p>
+        </div>
+      ))}
         </div>
       </div>
 
       {/* Buy Tickets */}
       <div className={`mb-8`}>
         <h2 className={`text-2xl font-semibold mb-4`}>Buy Tickets</h2>
-        <button className={`bg-green-500 text-white py-2 px-4 rounded-full`}>Buy Now</button>
+        <a href="https://www.iplt20.com" className={`bg-green-500 text-white py-2 px-4 rounded-full`}>Buy Now</a>
       </div>
 
       {/* Graphs and Analytics */}
-      <div>
-        <h2 className={`text-2xl font-semibold mb-4`}>Team Analytics</h2>
-        <div className={`grid grid-cols-2 gap-4`}>
-          <div className={`bg-white rounded-lg p-4`}>
-            <h3 className={`text-xl font-semibold mb-2`}>Team A</h3>
-            {/* Add graph or analytics for Team A */}
-          </div>
-          <div className={`bg-white rounded-lg p-4`}>
-            <h3 className={`text-xl font-semibold mb-2`}>Team B</h3>
-            {/* Add graph or analytics for Team B */}
-          </div>
-        </div>
-      </div>
+    
     </div>
   )
 }
