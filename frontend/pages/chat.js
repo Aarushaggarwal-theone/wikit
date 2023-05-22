@@ -42,7 +42,7 @@ function chat() {
 
       <div className={`flex-1 flex flex-col`}>
         <header className={`bg-black border-b border-violet-500 shadow-md shadow-violet-500 text-white py-4 px-6`}>
-          <h1 className={`text-xl font-semibold`}>Your Master</h1>
+          <h1 className={`text-xl font-semibold`}>John Doe</h1>
         </header>
         <div className={`flex-1 bg-black`}>
           <div className={`p-4`}>
