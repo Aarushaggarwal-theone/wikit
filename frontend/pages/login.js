@@ -29,7 +29,7 @@ function Login() {
   return (
     <div className={`flex items-center justify-center h-screen bg-black`}>
       <Header />
-      <div className={`bg-black max-w-lg w-full border border-2 shadow-md shadow-violet-500 border-violet-500 rounded-lg text-white p-10`}>
+      <div className={`bg-black max-w-lg w-full border border-2 shadow-2xl shadow-violet-500 border-violet-500 rounded-lg text-white p-20`}>
         <h2 className={`text-4xl font-bold mb-4 text-center`}>Login</h2>
         <form>
           <div className={`mb-4`}>

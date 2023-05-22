@@ -11,7 +11,7 @@ function store() {
       </div>
       <div>
       <div className={`container mx-auto px-4 py-16 text-white`}>
-        <h1 className={`text-7xl font-bold mb-24 text-center`}>Shop Products</h1>
+        <h1 className={`text-7xl font-bold mb-8 text-center`}>Shop Products</h1>
         <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8`}>
           <div className={`bg-black border border-2 shadow-indigo-500 shadow-2xl border-violet-500 p-8 shadow rounded-lg`}>
             <h2 className={`text-2xl font-bold mb-4`}>Merchendise</h2>

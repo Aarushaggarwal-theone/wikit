@@ -1,13 +1,14 @@
 import Header from '@/components/Header';
 import React from 'react';
+import Link from 'next/link';
 
 const shoptickets = () => {
   const products = [
     {
       id: 1,
       name: 'GT vs CSK',
-      price: 20,
-      image: 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/202008/rcbjersey11.jpeg',
+      price: 1500,
+      image: 'https://images.news18.com/ibnlive/uploads/2022/05/fsx8fuvauaa1qrd1-16526078723x2.jpg?impolicy=website&width=510&height=356',
       time: '7:30',
       date: 'Today',
       available: 118,
@@ -16,7 +17,7 @@ const shoptickets = () => {
         id: 2,
         name: ' LSG vs MI',
         price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-3.36.39-PM.jpeg?w=690',
+        image: 'https://www.zoomnews.in/uploads_2019/newses/lsg-vs-mi_1696158523_sm.webp',
         time: '7:30',
         date: '24th May 2023',
         available: 123,
@@ -39,11 +40,11 @@ const shoptickets = () => {
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-40 rounded-md object-cover mb-4"
+              className="w-full h-70 rounded-md object-cover mb-4"
             />
             <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
-            <p className="text-white">Price: ${product.price}</p>
-            <button className="bg-black border border-2 border-violet-500 text-white py-2 px-4 mt-4 rounded-md shadow-2xl shadow-violet-500">
+            <p className="text-white">Price: Rs. {product.price}</p>
+            <button href="#" className="bg-black border border-2 border-violet-500 text-white py-2 px-4 mt-4 rounded-md shadow-2xl shadow-violet-500">
               Buy Now
             </button>
           </div>
@@ -52,5 +53,7 @@ const shoptickets = () => {
     </div>
   );
 };
+
+export default shoptickets;
 
 export default shoptickets;
