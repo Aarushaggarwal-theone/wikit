@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '@/components/Header'
+import Link from 'next/link'
 function home() {
   const games = [
     {
@@ -39,7 +40,7 @@ function home() {
       {/* Buy Tickets */}
       <div className={`mb-8`}>
 
-        <a href="/shoptickets" className={`bg-green-500 text-white py-2 px-4 rounded-full`}>Buy Now</a>
+        <Link href="/shoptickets" className={`bg-green-500 text-white py-2 px-4 rounded-full`}>Buy Now</Link>
       </div>
 
       {/* Graphs and Analytics */}

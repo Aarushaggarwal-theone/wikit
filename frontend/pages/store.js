@@ -16,7 +16,7 @@ function store() {
           <div className={`bg-black border border-2 hover:shadow-indigo-500 hover:p-12 shadow-2xl border-violet-500 p-8 shadow rounded-lg`}>
             <h2 className={`text-2xl font-bold mb-4`}>Merchendise</h2>
             <ul className={`text-white`}>
-            <Image width={500} height={500} src="/cap.png" />
+            <Image alt={"pic"} width={500} height={500} src="/cap.png" />
             </ul>
             <Link href="/shopmerch" className={`bg-black border mt-24 justify-center border-1 border-violet-500 shadow-violet-500/50 shadow-xl text-white font-bold py-2 px-4 rounded-md mt-4`}>
               Shop Now
@@ -25,7 +25,7 @@ function store() {
           <div className={`bg-black border text-white border-2 hover:shadow-indigo-500 hover:p-12 shadow-2xl border-violet-500 p-8 rounded-lg`}>
             <h2 className={`text-2xl font-bold mb-4`}>Tickets</h2>
             <ul className={`text-white`}>
-                <Image width={500} height={500} src="/tickets.png" />
+                <Image alt={"pic"} width={500} height={500} src="/tickets.png" />
             </ul>
             <Link href="/shoptickets" className={`bg-black border border-1 border-violet-500 shadow-violet-500/50 shadow-xl text-white font-bold py-2 px-4 rounded-md mt-4`}>
               Shop Now
@@ -34,7 +34,7 @@ function store() {
           <div className={`bg-black border border-2 hover:shadow-indigo-500 shadow-2xl hover:p-12 border-violet-500 rounded-lg p-8`}>
             <h2 className={`text-2xl font-bold mb-4`}>Equipment</h2>
             <ul className={`text-white`}>
-                <Image height={500} width={500} src="/ball.png" />
+                <Image alt={"pic"} height={500} width={500} src="/ball.png" />
             </ul>
             <Link href="/shopequipment" className={`bg-black border border-1 border-violet-500 shadow-violet-500/50 shadow-xl text-white font-bold py-2 px-4 rounded-md mt-4`}>
               Shop Now

@@ -7,7 +7,7 @@ function Header() {
         <header className={`fixed top-0 asbolute left-0 right-0 bg-black shadow-violet-500 shadow-sm text-white py-4 z-10`}>
       <div className={`container mx-auto flex items-center justify-between px-4`}>
         <div className={`flex items-center space-x-4`}>
-          <img className={`h-10 w-15`} src="https://media.discordapp.net/attachments/1109362091841835030/1109708619429204069/logo.png?width=1000&height=300" alt="Logo" />
+          <Image className={`h-10 w-15`} src="/logow.png" alt="Logo" />
           
         </div>
         <nav className={`space-x-4`}>
