@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
-function pricing() {
+function Pricing() {
   return (
     <div className={`flex items-center justify-center mx-auto h-screen bg-black`}>
       <div>
@@ -53,4 +53,4 @@ function pricing() {
   )
 }
 
-export default pricing
+export default Pricing

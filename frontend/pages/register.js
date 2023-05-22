@@ -1,6 +1,7 @@
 import Header from '@/components/Header'
 import React from 'react'
 
+<<<<<<< HEAD
 function register() {
   return (
     <div className={`flex items-center justify-center min-h-screen bg-black`}>
@@ -59,6 +60,10 @@ function register() {
       </div>
     </div>
   )
+=======
+function Register() {
+  
+>>>>>>> 8ad60a1608727ebcddda1fc7a17db6d44af6eeac
 }
 
 export default register

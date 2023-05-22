@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
-const App = () => {
+function App () {
   const router = useRouter();
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const App = () => {
     }
   }, []);
 
-  return <div>Redirecting...</div>;
+  return <div className='text-white'>Redirecting...</div>;
 };
 
 export default App;
