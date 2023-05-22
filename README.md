@@ -1,8 +1,9 @@
-<<<<<<< HEAD
+
 # Wikit
-=======
+
+
 Wikit
->>>>>>> bf073f561a85464465817844ef8856d932a8962e
+
 
 📚 Wikit for the cricket fans, by cricket fans
 
