@@ -2,11 +2,8 @@ import Header from '@/components/Header';
 import React from 'react';
 import Link from 'next/link';
 
-<<<<<<<< HEAD:frontend/pages/shopmerch.js
+
 const shopmerch = () => {
-========
-function Shop = () => {
->>>>>>>> main:frontend/components/shop.js
   const products = [
     {
       id: 1,
@@ -89,7 +86,7 @@ function Shop = () => {
               className="w-full h-40 rounded-md object-cover mb-4"
             />
             <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
-            <p className="text-white">Price: ${product.price}</p>
+            <p className="text-white">Price: Rs. {product.price}</p>
             <button href="#" className="bg-black border border-2 border-violet-500 text-white py-2 px-4 mt-4 rounded-md shadow-2xl shadow-violet-500">
               Buy Now
             </button>

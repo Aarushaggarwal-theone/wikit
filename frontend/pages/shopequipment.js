@@ -7,38 +7,26 @@ const shopequipment = () => {
     {
       id: 1,
       name: 'GM Bat',
-      price: 20,
-      image: 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/202008/rcbjersey11.jpeg',
+      price: 3400,
+      image: 'https://m.media-amazon.com/images/I/417Wbg68KFL._SX679_.jpg',
     },
     {
         id: 2,
         name: 'GM Cricket Ball',
-        price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-3.36.39-PM.jpeg?w=690',
+        price: 1300,
+        image: 'https://m.media-amazon.com/images/I/41JwzToPu-L.jpg',
     },
     {
         id: 3,
         name: 'GM, Helmet',
-        price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-3.36.39-PM.jpeg?w=690',
+        price: 2400,
+        image: 'https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/1280x1280/products/3264/6956/Shrey_Classic_Steel_Cricket_Helmet_Mens_and_Boys_Size_cricketershop_1__12348.1599509475.jpg?c=1',
     },
     {
         id: 4,
-        name: 'GM, Helmet',
-        price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-3.36.39-PM.jpeg?w=690',
-    },
-    {
-        id: 5,
-        name: 'GM Cricket Bat ',
-        price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-3.36.39-PM.jpeg?w=690',
-    },
-    {
-        id: 6,
         name: 'GM Water Bottle',
-        price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-3.36.39-PM.jpeg?w=690',
+        price: 500,
+        image: 'https://5.imimg.com/data5/FH/SA/RX/SELLER-9031732/gm-410-ultra-single-wall-cola-bottle-1000x1000.jpg',
     }
   ];
 
@@ -61,7 +49,7 @@ const shopequipment = () => {
               className="w-full h-40 rounded-md object-cover mb-4"
             />
             <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
-            <p className="text-white">Price: ${product.price}</p>
+            <p className="text-white">Price: Rs. {product.price}</p>
             <button href="#" className="bg-black border border-2 border-violet-500 text-white py-2 px-4 mt-4 rounded-md shadow-2xl shadow-violet-500">
               Buy Now
             </button>
