@@ -1,32 +1,44 @@
-import Header from '@/components/Header'
-import React from 'react'
-import { useState } from 'react';
-import axios from 'axios';
+import React from "react";
+// import 'firebaseui'
+import {initializeApp}from "firebase/app";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { useState } from "react";
 
-function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+import Header from "@/components/Header";
 
-  const handleSubmit = async (e) => {
-    try {
-      const response = await fetch('https:/localhost:4996/api/users/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          email,
-          password
-        })
-      });
 
-      console.log(response.json())
-    } catch (error) {
-      // Handle error
-      console.error(error);
-    }
-  };
-  return (
+function Auth() {
+    const clientCredentials = {
+    apiKey: process.env.apiKey,
+    authDomain: process.env.authDomain,
+    databaseURL: process.env.databaseURL,
+    projectId: process.env.projectId,
+    storageBucket: process.env.storageBucket,
+    messagingSenderId: process.env.messagingSenderId,
+    appId: process.env.appId,
+    measurementId: process.env.measurementId
+}
+
+
+    const appNew = initializeApp(clientCredentials)
+    const auth = getAuth(appNew);
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const handleSubmit = (e) => {
+        signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    // ...
+    console.log(user)
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log(errorCode, errorMessage)
+  });}
+
+    return (
     <div className={`flex items-center justify-center h-screen bg-black`}>
       <Header />
       <div className={`bg-black max-w-lg w-full border border-2 shadow-md shadow-violet-500 border-violet-500 rounded-lg text-white p-10`}>
@@ -62,11 +74,11 @@ function Login() {
           <button onClick={(e) => handleSubmit(e) } className={`bg-black border border-1 border-violet-500 shadow-violet-500/50 shadow-xl text-white font-bold py-2 px-4 rounded-md mt-4`}>
               Login
             </button>
-            <a
+            
+              Dont have an account?<a
               className={`inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800`}
               href="#"
-            >
-              Dont have an account? Sign Up!
+            > Sign Up!
             </a>
           </div>
         </form>
@@ -75,4 +87,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Auth;
