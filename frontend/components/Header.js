@@ -14,6 +14,8 @@ function Header() {
           <Link className={`text-gray-300 hover:text-white`} href="home">Home</Link>
           <Link className={`text-gray-300 hover:text-white`} href="/chatcasts">ChatCasts</Link>
           <Link className={`text-gray-300 hover:text-white`} href="/chat">Group Chat</Link>
+
+          <Link className={`text-gray-300 hover:text-white`} href="/store">Store</Link>
           <Link className={`text-gray-300 hover:text-white`} href="/pricing">Pricing</Link>
         </nav>
         <div className={`space-x-4`}>
