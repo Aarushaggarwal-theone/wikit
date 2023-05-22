@@ -81,95 +81,15 @@ measurementId=YOUR_MEASUREMENT_ID
 
 </code></div></div></pre>
 
-**Step 5: Configure the Flask app**
+**Step 5: Run the Next App at `https://localhost:3000`**
 
-* Open the `config.py` file in the project directory.
-* Replace the placeholder values with your Firebase configuration credentials.
-
-**Step 5: Run the Flask app**
-
-<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs">python app.py
+<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs">npm run start
 </code></div></div></pre>
 
 **Step 6: Access the app**
-Open your web browser and visit `http://localhost:5000` to access the app locally.
+Open your web browser and visit `http://localhost:3000` to access the app locally.
 
-Note: If the default port `5000` is already in use, you can specify a different port by modifying the `app.py` file.
-
-That's it! You have successfully set up and run the project locally on your machine. You can now explore the app's features and interact with the chat room, leveraging the power of the intelligent clustering algorithm to connect with like-minded sports fans.
-
-**Prerequisites:**
-
-* Python 3.x installed on your machine
-* pip package manager installed
-
-**Step 1: Clone the repository**
-
-<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>bash</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-bash">git clone <repository-url>
-</code></div></div></pre>
-
-**Step 2: Install dependencies**
-
-<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>bash</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-bash">cd <repository-directory>
-pip install -r requirements.txt
-</code></div></div></pre>
-
-**Step 3: Set up Firebase and Firestore**
-
-* Create a Firebase project and enable Firestore database.
-* Obtain the Firebase configuration credentials.
-
-**Step 4: Configure the Flask app**
-
-* Open the `config.py` file in the project directory.
-* Replace the placeholder values with your Firebase configuration credentials.
-
-**Step 5: Run the Flask app**
-
-<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs">python app.py
-</code></div></div></pre>
-
-**Step 6: Access the app**
-Open your web browser and visit `http://localhost:5000` to access the app locally.
-
-Note: If the default port `5000` is already in use, you can specify a different port by modifying the `app.py` file.
+Note: If the default port `3000` is already in use, you can specify a different port by modifying the `package.json` file.
 
 That's it! You have successfully set up and run the project locally on your machine. You can now explore the app's features and interact with the chat room, leveraging the power of the intelligent clustering algorithm to connect with like-minded sports fans.
 
-**Prerequisites:**
-
-* Python 3.x installed on your machine
-* pip package manager installed
-
-**Step 1: Clone the repository**
-
-<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>bash</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-bash">git clone <repository-url>
-</code></div></div></pre>
-
-**Step 2: Install dependencies**
-
-<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>bash</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-bash">cd <repository-directory>
-pip install -r requirements.txt
-</code></div></div></pre>
-
-**Step 3: Set up Firebase and Firestore**
-
-* Create a Firebase project and enable Firestore database.
-* Obtain the Firebase configuration credentials.
-
-**Step 4: Configure the Flask app**
-
-* Open the `config.py` file in the project directory.
-* Replace the placeholder values with your Firebase configuration credentials.
-
-**Step 5: Run the Flask app**
-
-<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs">python app.py
-</code></div></div></pre>
-
-**Step 6: Access the app**
-Open your web browser and visit `http://localhost:5000` to access the app locally.
-
-Note: If the default port `5000` is already in use, you can specify a different port by modifying the `app.py` file.
-
-That's it! You have successfully set up and run the project locally on your machine. You can now explore the app's features and interact with the chat room, leveraging the power of the intelligent clustering algorithm to connect with like-minded sports fans.
