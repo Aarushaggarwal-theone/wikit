@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import React from 'react';
+import Link from 'next/link';
 
 const shopequipment = () => {
   const products = [
@@ -61,7 +62,7 @@ const shopequipment = () => {
             />
             <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
             <p className="text-white">Price: ${product.price}</p>
-            <button className="bg-black border border-2 border-violet-500 text-white py-2 px-4 mt-4 rounded-md shadow-2xl shadow-violet-500">
+            <button href="#" className="bg-black border border-2 border-violet-500 text-white py-2 px-4 mt-4 rounded-md shadow-2xl shadow-violet-500">
               Buy Now
             </button>
           </div>
