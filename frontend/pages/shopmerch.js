@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import React from 'react';
 
-const shop = () => {
+const shopmerch = () => {
   const products = [
     {
       id: 1,
@@ -95,4 +95,4 @@ const shop = () => {
   );
 };
 
-export default shop;
+export default shopmerch;

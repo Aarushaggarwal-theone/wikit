@@ -12,7 +12,7 @@ function chat() {
           <ul className={`space-y-2`}>
             <li className={`flex shadow-2xl shadow-violet-500 items-center border border-violet-500 border-2 rounded-md p-2 pb-2`}>
               {/* <img className={`w-10 h-10 rounded-full mr-4`} src="contact1.png" alt="Contact" /> */}
-              <p className={`text-white`}>Your Master</p>
+              <p className={`text-white`}>John Doe</p>
             </li>
             {/* Add more contacts */}
           </ul>
@@ -21,7 +21,7 @@ function chat() {
       </div>
       <div className={`flex-1 flex flex-col`}>
         <header className={`bg-black border-b border-violet-500 shadow-md shadow-violet-500 text-white py-4 px-6`}>
-          <h1 className={`text-xl font-semibold`}>Your Master</h1>
+          <h1 className={`text-xl font-semibold`}>John Doe</h1>
         </header>
         <div className={`flex-1 bg-black`}>
           <div className={`p-4`}>
