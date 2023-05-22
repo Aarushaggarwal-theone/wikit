@@ -1,14 +1,14 @@
 import Header from '@/components/Header';
 import React from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
 const shoptickets = () => {
   const products = [
     {
       id: 1,
       name: 'GT vs CSK',
       price: 1500,
-      image: 'https://images.news18.com/ibnlive/uploads/2022/05/fsx8fuvauaa1qrd1-16526078723x2.jpg?impolicy=website&width=510&height=356',
+      image: '/gtcsk.png',
       time: '7:30',
       date: 'Today',
       available: 118,
@@ -17,7 +17,7 @@ const shoptickets = () => {
         id: 2,
         name: ' LSG vs MI',
         price: 20,
-        image: 'https://www.zoomnews.in/uploads_2019/newses/lsg-vs-mi_1696158523_sm.webp',
+        image: '/lsgmi.png',
         time: '7:30',
         date: '24th May 2023',
         available: 123,
@@ -37,7 +37,9 @@ const shoptickets = () => {
             key={product.id}
             className="bg-black border border-2 border-violet-500 shadow-violet-500 rounded-lg p-4 shadow-md"
           >
-            <img
+            <Image
+              width={500}
+              height={300}
               src={product.image}
               alt={product.name}
               className="w-full h-70 rounded-md object-cover mb-4"
@@ -53,7 +55,5 @@ const shoptickets = () => {
     </div>
   );
 };
-
-export default shoptickets;
 
 export default shoptickets;

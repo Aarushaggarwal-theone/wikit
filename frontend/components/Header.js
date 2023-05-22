@@ -12,7 +12,7 @@ function Header() {
         </div>
         <nav className={`space-x-4`}>
           <Link className={`text-gray-300 hover:text-white`} href="home">Home</Link>
-          <Link className={`text-gray-300 hover:text-white`} href="/store">Shop</Link>
+
           <Link className={`text-gray-300 hover:text-white`} href="/chat">Group Chat</Link>
 
           <Link className={`text-gray-300 hover:text-white`} href="/store">Store</Link>

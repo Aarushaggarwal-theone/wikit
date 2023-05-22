@@ -1,43 +1,19 @@
 import Header from '@/components/Header';
 import React from 'react';
-
+import Image from 'next/image';
 const shopequipment = () => {
   const products = [
     {
       id: 1,
-      name: 'GM Bat',
+      name: 'RCB Full Kit',
       price: 20,
-      image: 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/202008/rcbjersey11.jpeg',
+      image: '/rcbjersey11.jpeg',
     },
     {
         id: 2,
-        name: 'GM Cricket Ball',
+        name: 'KKR Full Kit',
         price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-3.36.39-PM.jpeg?w=690',
-    },
-    {
-        id: 3,
-        name: 'GM, Helmet',
-        price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-3.36.39-PM.jpeg?w=690',
-    },
-    {
-        id: 4,
-        name: 'GM, Helmet',
-        price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-3.36.39-PM.jpeg?w=690',
-    },
-    {
-        id: 5,
-        name: 'GM Cricket Bat ',
-        price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-3.36.39-PM.jpeg?w=690',
-    },
-    {
-        id: 6,
-        name: 'GM Water Bottle',
-        price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-3.36.39-PM.jpeg?w=690',
+        image: '/KKRJersey.jpg',
     }
   ];
 
@@ -54,7 +30,9 @@ const shopequipment = () => {
             key={product.id}
             className="bg-black border border-2 border-violet-500 shadow-violet-500 rounded-lg p-4 shadow-md"
           >
-            <img
+            <Image
+              width={300}
+              height={500}
               src={product.image}
               alt={product.name}
               className="w-full h-40 rounded-md object-cover mb-4"
@@ -70,3 +48,4 @@ const shopequipment = () => {
     </div>
   );
 };
+export default shopequipment;

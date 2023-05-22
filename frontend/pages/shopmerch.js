@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import React from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
 
 const shopmerch = () => {
   const products = [
@@ -9,61 +9,61 @@ const shopmerch = () => {
       id: 1,
       name: 'RCB TSHIRT',
       price: 20,
-      image: 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/202008/rcbjersey11.jpeg',
+      image: '/RCBJersey.jpeg',
     },
     {
         id: 2,
         name: 'KKR TSHIRT',
         price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-3.36.39-PM.jpeg?w=690',
+        image: '/KKRJersey.jpg',
       },
       {
         id: 3,
         name: 'MI TSHIRT',
         price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2021/02/IPL-2021-MI.jpg',
+        image: '/MIJersey.jpg',
       },
       {
         id: 4,
         name: 'CSK TSHIRT',
         price: 20,
-        image: 'https://img.jagranjosh.com/images/2022/March/2632022/CSK_player_list_2022_stats_past_records.jpg',
+        image: '/CSKJersey.jpg',
       },
       {
         id: 5,
         name: 'GT TSHIRT',
         price: 20,
-        image: 'https://gumlet.assettype.com/bloombergquint/2023-03/d613d69c-f171-43e1-9cf2-b816622ebf48/Gujarat_Titans.jfif',
+        image: '/GTJersey.jpg',
       },
       {
         id: 6,
         name: 'LSG TSHIRT',
         price: 20,
-        image: 'https://img.jagranjosh.com/images/2023/March/3132023/IPL-2023-list-LSG.jpg',
+        image: '/LSGJersey.jpg',
       },
       {
         id: 7,
         name: 'SRH TSHIRT',
         price: 20,
-        image: 'https://www.insidesport.in/wp-content/uploads/2021/03/IPL-SRH.jpg',
+        image: '/SRHJersey.jpg',
       },
       {
         id: 8,
         name: 'DC TSHIRT',
         price: 20,
-        image: 'https://english.cdn.zeenews.com/sites/default/files/2022/02/15/1014773-capitalsquadipl.jpg',
+        image: '/DCJersey.jpg',
       },
       {
         id: 9,
         name: 'PBKS TSHIRT',
         price: 20,
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTadHocuvauX1k7kumxtCuDxf-HMQNJpuoLHKC64ig-5nfS7lFSkvK476iAqg602OxVG_Y&usqp=CAU',
+        image: '/PBKSJersey.jpg',
       },
       {
         id: 10,
         name: 'RR TSHIRT',
         price: 20,
-        image: 'https://img.jagranjosh.com/images/2022/March/2932022/Rajasthan_royals.jpg',
+        image: '/RRJersey.jpg',
       },
   ];
 
@@ -80,7 +80,9 @@ const shopmerch = () => {
             key={product.id}
             className="bg-black border border-2 border-violet-500 shadow-violet-500 rounded-lg p-4 shadow-md"
           >
-            <img
+            <Image
+            height={300}
+            width={500}
               src={product.image}
               alt={product.name}
               className="w-full h-40 rounded-md object-cover mb-4"
@@ -99,6 +101,3 @@ const shopmerch = () => {
 
 export default shopmerch;
 
-};
-}
-export default shopmerch;

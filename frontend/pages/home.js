@@ -23,7 +23,7 @@ function home() {
       </div>
       <div className={`mb-8`}>
         <h2 className={`text-2xl font-semibold mb-4`}>Next Matches</h2>
-        matches.ma
+
         <div className={`grid grid-cols-2 gap-4`}>
            {games.map((game, index) => (
         <div key={index} className={`bg-purple-500 rounded-lg p-8 hover:bg-purple-300 hover:transition-ease hover:shadow-purple-500`}>
@@ -38,8 +38,8 @@ function home() {
 
       {/* Buy Tickets */}
       <div className={`mb-8`}>
-        <h2 className={`text-2xl font-semibold mb-4`}>Buy Tickets</h2>
-        <a href="https://www.iplt20.com" className={`bg-green-500 text-white py-2 px-4 rounded-full`}>Buy Now</a>
+
+        <a href="/shoptickets" className={`bg-green-500 text-white py-2 px-4 rounded-full`}>Buy Now</a>
       </div>
 
       {/* Graphs and Analytics */}
