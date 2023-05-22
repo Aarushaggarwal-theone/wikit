@@ -5,7 +5,7 @@ function register() {
   return (
     <div className={`flex items-center justify-center min-h-screen bg-black`}>
       <Header />
-      <div className={`bg-black border border-2 border-violet-500 shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 max-w-md w-full`}>
+      <div className={`bg-black border border-2 border-violet-500 shadow-md rounded-lg px-10 pt-10 pb-10 mb-4 max-w-md w-full`}>
         <h2 className={`text-4xl font-bold mb-4 text-center text-white`}>Register</h2>
         <form>
           <div className={`mb-4`}>
