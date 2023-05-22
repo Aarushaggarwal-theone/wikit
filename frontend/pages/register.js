@@ -1,7 +1,7 @@
 import Header from '@/components/Header'
 import React from 'react'
 
-function register() {
+function Register() {
   return (
     <div className={`flex items-center justify-center min-h-screen bg-black`}>
       <Header />

@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import React from 'react';
 
-const shop = () => {
+function Shop = () => {
   const products = [
     {
       id: 1,

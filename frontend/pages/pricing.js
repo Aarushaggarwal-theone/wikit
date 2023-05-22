@@ -2,7 +2,7 @@
 import Header from '@/components/Header'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
-function pricing() {
+function Pricing() {
   return (
     <div className={`flex items-center justify-center h-screen bg-black`}>
       <div>
@@ -61,4 +61,4 @@ function pricing() {
   )
 }
 
-export default pricing
+export default Pricing

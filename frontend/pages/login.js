@@ -3,13 +3,13 @@ import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
 
-function login() {
+function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = async (e) => {
     try {
-      const response = await fetch('https://w-backend.onrender.com/api/users/login', {
+      const response = await fetch('https:/localhost:4996/api/users/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -75,4 +75,4 @@ function login() {
   )
 }
 
-export default login
+export default Login

@@ -1,7 +1,7 @@
 import React from 'react'
 import Item from '../components/Item'
 
-function merch() {
+function Merch() {
   return (
     <div>
         <Item />
@@ -9,4 +9,4 @@ function merch() {
   )
 }
 
-export default merch
+export default Merch
