@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '@/components/Header'
 import Link from 'next/link'
+import Image from 'next/image'
 function home() {
   const games = [
     {
@@ -41,6 +42,18 @@ function home() {
       <div className={`mb-8`}>
 
         <Link href="/shoptickets" className={`bg-green-500 text-white py-2 px-4 rounded-full`}>Buy Now</Link>
+      </div>
+
+      <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-8`}>
+        <div>
+          <Image className='rounded-lg m-5 shadow-2xl shadow-violet-500' src="/hardikstats.jpeg" width={500} height={500} />
+        </div>
+         <div>
+          <Image className='rounded-lg m-5 shadow-2xl shadow-violet-500' src="/rohitstats.jpeg" width={500} height={500} />
+        </div>
+        <div>
+          <Image className='rounded-lg m-5 shadow-2xl shadow-violet-500' src="/dhoni-homeaway.jpeg" width={800} height={600} />
+        </div>
       </div>
 
       {/* Graphs and Analytics */}
