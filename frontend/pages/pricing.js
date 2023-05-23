@@ -19,8 +19,8 @@ function Pricing() {
             <ul className={`text-white`}>
               <li className={`m-2 ml-4  list-disc`}>Chat and connect with other fans.</li>
               <li className={`m-2 ml-4 list-disc`}>Analytics and Statistics</li>
-              <li className={`m-2 ml-4 list-disc`}>Purchase merchendise</li>
-              <li className={`m-2 ml-4 list-disc`}>Purchase tickets</li>
+              <li className={`m-2 ml-4 list-disc`}>FREE Podcast Episodes</li>
+              <li className={`m-2 ml-4 list-disc`}>Purchase tickets, merch and more...</li>
             </ul>
             <button className={`bg-black border border-1 border-violet-500 shadow-violet-500/50 shadow-xl text-white font-bold py-2 px-4 rounded-md mt-4`}>
               Buy Now
@@ -32,10 +32,10 @@ function Pricing() {
             <p className={`text-white mb-4`}>Save 7% with yearly subcription</p>
             <p className={`text-3xl font-bold mb-4`}>₹179/month</p>
             <ul className={`text-white`}>
-              <li className={`mb-2 list-disc`}>Everything in the pro plan</li>
-              <li className={`mb-2 list-disc`}>Upto 50% Discount on merchendise</li>
-              <li className={`mb-2 list-disc`}>Upto 50% Discount on tickets</li>
-              <li className={`mb-2 list-disc`}>Access to friendly fan tornaments</li>
+              <li className={`mb-2 list-disc`}>Everything in the free plan</li>
+              <li className={`mb-2 list-disc`}>Online friendly fan tournaments for rewards such as discounts</li>
+              <li className={`mb-2 list-disc`}>Upto 20% Discount on tickets</li>
+              <li className={`mb-2 list-disc`}>Upto 10% Discounts</li>
             </ul>
             <button className={`bg-black border border-1 border-violet-500 shadow-violet-500/50 shadow-xl text-white font-bold py-2 px-4 rounded-md mt-4`}>
               Buy Now
