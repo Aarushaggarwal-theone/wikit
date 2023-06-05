@@ -1,8 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 
+import PocketBase from 'pocketbase';
+
+const pb = new PocketBase('http://127.0.0.1:8090');
+
+
+async function CreateMessage (data) {
+    const record = await pb.collection('messages').create(data);
+    console.log(record)
+} 
+
+
+  console.log()
 import Firebase from '@/components/Firefunctions'
 function Chat() {
+  
   const [newMessage, setNewMessage] = useState('');
   const [messages, setMessages] = useState([
     {

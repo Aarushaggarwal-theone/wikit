@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from sklearn.cluster import DBSCAN
 import matplotlib.pyplot as plt
+import pickle
 
 # Load data from CSV file
 data = pd.read_csv('/Users/aarush/Documents/Coding/wikit/frontend/functions/clusters.csv')
@@ -12,6 +13,10 @@ dbscan = DBSCAN(eps=0.5, min_samples=5)
 
 # Fit the model to the data
 dbscan.fit(X)
+
+# Save the DBSCAN model to a pickle file
+with open('/Users/aarush/Documents/Coding/wikit/frontend/functions/dbscan_model.pkl', 'wb') as f:
+    pickle.dump(dbscan, f)
 
 # Get the predicted labels and core samples
 labels = dbscan.labels_

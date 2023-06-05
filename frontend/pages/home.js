@@ -28,7 +28,7 @@ function home() {
 
         <div className={`grid grid-cols-2 gap-4`}>
            {games.map((game, index) => (
-        <div key={index} className={`bg-purple-500 rounded-lg p-8 hover:bg-purple-300 hover:transition-ease hover:shadow-purple-500`}>
+        <div key={index} className={`bg-red-500 rounded-lg p-8 hover:bg-red-300 hover:transition-ease hover:shadow-red-500`}>
           <h3 className={`text-xl font-semibold mb-2 text-black`}>{game.gameType}</h3>
           <p className={`text-gray-800 mb-4`}>{game.teamNames}</p>
           <p className={`text-gray-50`}>Date: {game.date}</p>
@@ -46,13 +46,13 @@ function home() {
 
       <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-8`}>
         <div>
-          <Image className='rounded-lg m-5 shadow-2xl shadow-violet-500' src="/hardikstats.jpeg" width={500} height={500} />
+          <Image className='rounded-lg m-5 shadow-2xl shadow-red-500' src="/hardikstats.jpeg" width={500} height={500} />
         </div>
          <div>
-          <Image className='rounded-lg m-5 shadow-2xl shadow-violet-500' src="/rohitstats.jpeg" width={500} height={500} />
+          <Image className='rounded-lg m-5 shadow-2xl shadow-red-500' src="/rohitstats.jpeg" width={500} height={500} />
         </div>
         <div>
-          <Image className='rounded-lg m-5 shadow-2xl shadow-violet-500' src="/dhoni-homeaway.jpeg" width={800} height={600} />
+          <Image className='rounded-lg m-5 shadow-2xl shadow-red-500' src="/dhoni-homeaway.jpeg" width={800} height={600} />
         </div>
       </div>
 
